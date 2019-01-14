@@ -83,3 +83,9 @@ production:
   database: atena_production
   username: atena
   password: <%= ENV['ATENA_DATABASE_PASSWORD'] %>
+
+staging:
+  <<: *default
+  database: atena_staging
+  username: atena
+  password: <%= ENV['ATENA_DATABASE_PASSWORD'] %>
